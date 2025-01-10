@@ -71,20 +71,20 @@ const Intro = () => {
         <a
           href="/CV.pdf"
           download
-          className="flex justify-center gap-2 py-3 transition bg-white border rounded-full outline-none cursor-pointer group text-gray-950 px-7 focus:scale-110 hover:scale-110 hover:bg-gray-100 active:scale-105 border-black/10"
+          className="flex justify-center gap-2 py-3 transition bg-white border rounded-full outline-none cursor-pointer group text-gray-950 px-7 focus:scale-110 hover:scale-110 hover:bg-gray-100 active:scale-105 border-black/10 dark:bg-white/10 dark:text-white/60"
         >
           Download CV{" "}
           <FaCloudDownloadAlt className="transition opacity-60 group-hover:translate-y-1" />
         </a>
         <a
           href=""
-          className="flex justify-center gap-2 p-4 text-gray-700 transition bg-white border rounded-full cursor-pointer focus:scale-110 hover:scale-110 hover:bg-gray-50 active:scale-105 border-black/10"
+          className="flex justify-center gap-2 p-4 text-gray-700 transition bg-white border rounded-full cursor-pointer focus:scale-110 hover:scale-110 hover:bg-gray-50 active:scale-105 border-black/10 dark:bg-white/10 dark:text-white/60"
         >
           <BsLinkedin />
         </a>
         <a
           href=""
-          className="bg-white text-gray-700 p-4 flex justify-center gap-2 text-[1.35rem] focus:scale-110 hover:scale-110 hover:bg-gray-50 active:scale-105 transition cursor-pointer border border-black/10 rounded-full"
+          className="bg-white text-gray-700 p-4 flex justify-center gap-2 text-[1.35rem] focus:scale-110 hover:scale-110 hover:bg-gray-50 active:scale-105 transition cursor-pointer border border-black/10 rounded-full dark:bg-white/10 dark:text-white/60"
         >
           <FaGithubSquare />
         </a>

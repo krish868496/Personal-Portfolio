@@ -3,12 +3,14 @@ import React from "react";
 import { FaPaperPlane } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/hooks/hook";
+import { sendEmail } from "../../../server/server";
+import toast from "react-hot-toast";
 
 const Contact = () => {
   const { ref } = useSectionInView("Contact");
-  const sendEmail = async (formData: FormData) => {
-    "use server";
-  };
+  // const sendEmail = async (formData: FormData) => {
+  //   "use server";
+  // };
   return (
     <motion.div
       ref={ref}
@@ -33,8 +35,6 @@ const Contact = () => {
       </p>
       <form
         action={async (formData) => {
-          console.log(formData.get("email"));
-          console.log(formData.get("message"));
           await sendEmail(formData);
         }}
         className="flex flex-col mt-10"

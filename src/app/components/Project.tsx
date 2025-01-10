@@ -17,21 +17,17 @@ export default function Project({ title, description, tags, imageUrl }: Project)
  const { ref } = useSectionInView("About");
 
   return (
-        
     <motion.section
       ref={ref}
-     className="group bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem] mb-3 sm:mb-8 last:mb-0 even:pl-8 hover:bg-gray-200 transition ">
-      <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:w-1/2 flex flex-col h-full group-even:ml-[20rem] ">
+      className="group bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem] mb-3 sm:mb-8 last:mb-0 even:pl-8 hover:bg-gray-200 transition "
+    >
+      <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:w-1/2 flex flex-col h-full group-even:ml-[20rem] dark:bg-white/10 dark:hover:bg-white/20 dark:text-white ">
         <h3 className="font-semibold text2xl">{title}</h3>
-        <p
-          className="leading-relaxed mt2"
-        >
-          {description}
-        </p>
+        <p className="mt-2 leading-relaxed dark:text-white/70">{description}</p>
         <ul className="flex flex-wrap gap-2 mt-4 sm:mt-auto">
           {tags?.map((tag, index) => (
             <li
-              className="bg-black/[0.7] px-3 py-1 text-[0/7] uppercase tracking-wider text-white rounded-full"
+              className="bg-black/[0.7] px-3 py-1 text-[0/7] uppercase tracking-wider text-white rounded-full dark:text-white/70"
               key={index}
             >
               {tag}
