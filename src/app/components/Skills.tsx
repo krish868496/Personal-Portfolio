@@ -17,9 +17,9 @@ const Skills = () => {
   const { ref } = useSectionInView("Skills");
 
   return (
-    <div id="Skills" ref={ref}>
-      <h3 className="font-semibold text2xl">My Skills</h3>
-      <ul className="flex flex-wrap justify-center gap-2 text-xl text-gray-800 max-w-[50rem]">
+    <div id="skills" ref={ref} className="my-40 -scroll-mt-28">
+      <h3 className="text-2xl font-semibold ">My Skills</h3>
+      <ul className="flex flex-wrap justify-center gap-2 text-xl text-gray-800 max-w-[50rem] my-10">
         {skillsData?.map((skill, ind) => (
           <motion.li
             className="bg-white  rounded-xl border-black/[0.1] px-5 py-3 dark:bg-white/10 dark:text-white/80 "

@@ -7,7 +7,7 @@ import { SectionName } from "@/types/type";
 
 export function useSectionInView(sectionName: SectionName) {
   const { ref, inView } = useInView({threshold: 0.5});
-  const { setActiveSection, activeSection } = useActiveSectionContext();
+  const { setActiveSection } = useActiveSectionContext();
   useEffect(() => {
     if (inView) {
       setActiveSection(sectionName);

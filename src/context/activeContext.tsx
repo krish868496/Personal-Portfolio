@@ -1,10 +1,6 @@
 "use client";
-import { links } from "@/lib/data";
 import { SectionName } from "@/types/type";
 import React, { createContext, useContext, useState } from "react";
-// import { useInView, useInView } from 'react-intersection-observer';
-
-// type SectionName = (typeof links)[number]["name"];
 
 type ProviderProps = {
   children: React.ReactNode;

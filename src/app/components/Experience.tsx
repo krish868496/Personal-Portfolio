@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import {
   VerticalTimeline,
@@ -9,7 +9,7 @@ import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/hooks/hook";
 
 const Experience = () => {
-    const { ref } = useSectionInView("Experience");
+  const { ref } = useSectionInView("Experience");
   return (
     <div ref={ref} id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
       <h3 className="text-2xl font-semibold">My experience</h3>

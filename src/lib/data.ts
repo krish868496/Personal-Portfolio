@@ -2,9 +2,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "../../public/corpcomment.png";
-import rmtdevImg from "../../public/rmtdev.png";
-import wordanalyticsImg from "../../public/wordanalytics.png";
+import realbetter from "../../public/realbetter.png";
+import collegeBharat from "../../public/collegeBharat.png";
+import techvins from "../../public/techvins.png";
+import gaurevKapur from "../../public/gaurevKapur.png";
 
 export const links = [
   {
@@ -35,52 +36,67 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Bachelor of Computer Applications (BCA)",
+    location: "India",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Completed my BCA, building a strong foundation in computer science and programming.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2018-2021",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Diploma in Software Development",
+    location: "India",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "Completed a diploma program focused on software development, enhancing my skills in MERN stack and modern technologies.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2021-2022",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Frontend Developer",
+    location: "Gurugram, India",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Working as a frontend developer with over 1.5 years of experience. My expertise includes React, Next.js, Tailwind CSS, and building dynamic and responsive web applications. I am passionate about creating seamless user experiences and constantly learning new technologies.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2023 - present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "B2B Real Estate Platform",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Worked as a frontend developer for 1 year, focusing on the platform's user interface and admin panel. This platform connects real estate agents, developers, and builders to facilitate property matching. Leveraged modern technologies to create a responsive and dynamic user experience.",
+    tags: ["Next.js", "Tailwind CSS", "React Admin", "TypeScript"],
+    imageUrl: realbetter,
   },
+
   {
-    title: "rmtDev",
+    title: "College Bharat",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "Worked as the frontend lead developer for a platform designed to help students explore articles, blogs, and resources for government exams and college admissions. The platform enables students to find college details, exam brochures, and search for colleges across India.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+    imageUrl: collegeBharat,
   },
+
   {
-    title: "Word Analytics",
+    title: "TechVins Website",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Developed the company's official website independently using Next.js and Tailwind CSS. The site achieved a perfect 100 PageSpeed score and is optimized for performance and user experience. The project involved creating a dynamic and responsive multi-page website tailored to the company's branding.",
+    tags: [
+      "Next.js",
+      "Tailwind CSS",
+      "Performance Optimization",
+      "100 PageSpeed",
+    ],
+    imageUrl: techvins,
+  },
+
+  {
+    title: "Gaurav Kapur's Personal Website",
+    description:
+      "Designed and developed the personal website for the owner of RealBetter. Built using Next.js and Tailwind CSS, the site highlights the owner's professional achievements and personal brand in a sleek and user-friendly interface.",
+    tags: ["Next.js", "Tailwind CSS", "React", "Personal Branding"],
+    imageUrl: gaurevKapur,
   },
 ] as const;
 
@@ -91,17 +107,17 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
-  "Git",
   "Tailwind",
-  "Prisma",
-  "MongoDB",
+  "Bootstrap",
   "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
   "Framer Motion",
+  "GraphQL",
+  "WordPress",
+  "Node.js",
+  "Express",
+  "MongoDB",
+  "Prisma",
+  "Git",
+  "Github",
+  "Postman",
 ] as const;

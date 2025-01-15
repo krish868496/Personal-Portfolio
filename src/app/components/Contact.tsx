@@ -4,13 +4,12 @@ import { FaPaperPlane } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/hooks/hook";
 import { sendEmail } from "../../../server/server";
+import { useFormStatus } from "react-dom";
 import toast from "react-hot-toast";
 
 const Contact = () => {
   const { ref } = useSectionInView("Contact");
-  // const sendEmail = async (formData: FormData) => {
-  //   "use server";
-  // };
+  const { pending } = useFormStatus();
   return (
     <motion.div
       ref={ref}
@@ -25,7 +24,7 @@ const Contact = () => {
       transition={{ duration: 1 }}
       viewport={{ once: true }}
     >
-      <h3 className="font-semibold text2xl">Contact</h3>
+      <h3 className="text-2xl font-semibold">Contact</h3>
       <p className="text-gray-700">
         Please Contact me directly at{" "}
         <a className="underline" href="mailto:krishandevraj8@gmail.com">
@@ -36,6 +35,7 @@ const Contact = () => {
       <form
         action={async (formData) => {
           await sendEmail(formData);
+          toast.success("Form sent successfully")
         }}
         className="flex flex-col mt-10"
       >
@@ -43,19 +43,28 @@ const Contact = () => {
           type="email"
           name="email"
           placeholder="Your Email"
-          className="rounded-lg borderBlack h-14/10"
+          required
+          className="px-4 rounded-lg borderBlack h-14"
         />
         <textarea
           name="message"
-          className="p-4 my-3 rounded-lg borderBlack"
+          required
+          className="p-4 my-3 rounded-lg borderBlack h-52"
           placeholder="Your Message"
         ></textarea>
         <button
-          className="h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all flex items-center group"
           type="submit"
+          className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 dark:bg-white dark:bg-opacity-10 disabled:scale-100 disabled:bg-opacity-65"
+          disabled={pending}
         >
-          Submit{" "}
-          <FaPaperPlane className="group-hover:translate-x-1 group-hover:translate-y-1 focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105" />
+          {pending ? (
+            <div className="w-5 h-5 border-b-2 border-white rounded-full animate-spin"></div>
+          ) : (
+            <>
+              Submit{" "}
+              <FaPaperPlane className="text-xs transition-all opacity-70 group-hover:translate-x-1 group-hover:-translate-y-1" />{" "}
+            </>
+          )}
         </button>
       </form>
     </motion.div>

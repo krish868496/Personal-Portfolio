@@ -8,6 +8,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import { useSectionInView } from "@/hooks/hook";
 import { useActiveSectionContext } from "@/context/activeContext";
+import profile from '../../../public/profile.png'
 const Intro = () => {
   const { ref } = useSectionInView("Home");
   const { setActiveSection } = useActiveSectionContext();
@@ -28,7 +29,7 @@ const Intro = () => {
           }}
         >
           <Image
-            src="https://images.unsplash.com/photo-1575089976121-8ed7b2a54265?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D"
+            src={profile}
             alt="developer"
             width="192"
             height="192"
@@ -43,9 +44,9 @@ const Intro = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Ricardo.</span> I'm a{" "}
+        <span className="font-bold">Hello, I'm Krishan.</span> I'm a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">8 years</span> of experience. I enjoy
+        <span className="font-bold">more than 1.5 years</span> of experience. I enjoy
         building <span className="italic">sites & apps</span>. My focus is{" "}
         <span className="underline">React (Next.js)</span>.
       </motion.h1>
@@ -59,7 +60,7 @@ const Intro = () => {
       >
         <Link
           href="#contact"
-          className="flex justify-center gap-2 py-3 text-white transition bg-gray-900 rounded-full outline-none group px-7 focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105"
+          className="flex items-center justify-center gap-2 py-3 text-white transition bg-gray-900 rounded-full outline-none group px-7 focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105"
           onClick={() => {
             setActiveSection("Contact");
           }}
@@ -71,19 +72,19 @@ const Intro = () => {
         <a
           href="/CV.pdf"
           download
-          className="flex justify-center gap-2 py-3 transition bg-white border rounded-full outline-none cursor-pointer group text-gray-950 px-7 focus:scale-110 hover:scale-110 hover:bg-gray-100 active:scale-105 border-black/10 dark:bg-white/10 dark:text-white/60"
+          className="flex items-center justify-center gap-2 py-3 transition bg-white border rounded-full outline-none cursor-pointer group text-gray-950 px-7 focus:scale-110 hover:scale-110 hover:bg-gray-100 active:scale-105 border-black/10 dark:bg-white/10 dark:text-white/60"
         >
           Download CV{" "}
-          <FaCloudDownloadAlt className="transition opacity-60 group-hover:translate-y-1" />
+          <FaCloudDownloadAlt className="transition opacity-60 group-hover:-translate-y-0.5" />
         </a>
         <a
-          href=""
+          href="https://www.linkedin.com/in/krishan86/"
           className="flex justify-center gap-2 p-4 text-gray-700 transition bg-white border rounded-full cursor-pointer focus:scale-110 hover:scale-110 hover:bg-gray-50 active:scale-105 border-black/10 dark:bg-white/10 dark:text-white/60"
         >
           <BsLinkedin />
         </a>
         <a
-          href=""
+          href="https://github.com/krish868496"
           className="bg-white text-gray-700 p-4 flex justify-center gap-2 text-[1.35rem] focus:scale-110 hover:scale-110 hover:bg-gray-50 active:scale-105 transition cursor-pointer border border-black/10 rounded-full dark:bg-white/10 dark:text-white/60"
         >
           <FaGithubSquare />
