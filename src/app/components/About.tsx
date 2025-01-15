@@ -6,14 +6,6 @@ import { useSectionInView } from "@/hooks/hook";
 
 export default function About() {
  const {ref} = useSectionInView('About')
-  // const { ref, inView } = useInView();
-  // const {setActiveSection} = useActiveSectionContext();
-
-  // useEffect(() => {
-  //   if (inView) {
-  //     setActiveSection("About");
-  //   }
-  // }, [inView])
 
   return (
     <motion.section

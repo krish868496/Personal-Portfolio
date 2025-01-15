@@ -46,8 +46,8 @@ const Intro = () => {
       >
         <span className="font-bold">Hello, I'm Krishan.</span> I'm a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">more than 1.5 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
+        <span className="font-bold">more than 1.5 years</span> of experience. I
+        enjoy building <span className="italic">sites & apps</span>. My focus is{" "}
         <span className="underline">React (Next.js)</span>.
       </motion.h1>
       <motion.div
@@ -72,7 +72,7 @@ const Intro = () => {
         <a
           href="/CV.pdf"
           download
-          className="flex items-center justify-center gap-2 py-3 transition bg-white border rounded-full outline-none cursor-pointer group text-gray-950 px-7 focus:scale-110 hover:scale-110 hover:bg-gray-100 active:scale-105 border-black/10 dark:bg-white/10 dark:text-white/60"
+          className="flex items-center justify-center gap-2 py-3 transition bg-white border rounded-full outline-none cursor-pointer group text-gray-950 px-7 focus:scale-110 hover:scale-110 hover:bg-gray-100 active:scale-105 border-black/10 dark:bg-white/10"
         >
           Download CV{" "}
           <FaCloudDownloadAlt className="transition opacity-60 group-hover:-translate-y-0.5" />
