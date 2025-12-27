@@ -12,6 +12,13 @@ export const metadata = {
   title: "Krishan | Personal Portfolio",
   description:
     "Frontend developer proficient in React.js and Next.js, creating dynamic web applications with enhanced SEO capabilities. Harnessing server-side rendering and client-side routing for optimal user experiences.",
+    keywords: ['Next.js', 'React', 'JavaScript'],
+    openGraph: {
+      title: 'Krishan | Personal Portfolio',
+      description: 'Frontend developer proficient in React.js and Next.js, creating dynamic web applications with enhanced SEO capabilities. Harnessing server-side rendering and client-side routing for optimal user experiences.',
+      images: "https://krishan-personal-portfolio-di4iszqbu-krishans-projects-58cbc211.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile.316fe5ec.png&w=256&q=95",
+  
+    },
 };
 
 export default function RootLayout({
