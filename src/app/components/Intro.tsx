@@ -8,7 +8,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import { useSectionInView } from "@/hooks/hook";
 import { useActiveSectionContext } from "@/context/activeContext";
-import profile from '../../../public/profile.png'
+import profile from "../../../public/profile.png";
 const Intro = () => {
   const { ref } = useSectionInView("Home");
   const { setActiveSection } = useActiveSectionContext();
@@ -44,12 +44,18 @@ const Intro = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Krishan.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">more than 1.5 years</span> of experience. I
-        enjoy building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        <span className="font-bold">Hi, I’m Krishan.</span>
+        I’m a <span className="font-bold">full-stack engineer</span> with{" "}
+        <span className="font-bold">2.5+ years</span> of experience building{" "}
+        <span className="italic">scalable web applications</span> and{" "}
+        <span className="italic">admin systems</span>. I specialize in{" "}
+        <span className="underline">React & Next.js</span> and focus on{" "}
+        <span className="font-bold">
+          performance, clean architecture, and real-world business logic
+        </span>
+        .
       </motion.h1>
+
       <motion.div
         className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row"
         initial={{ opacity: 0, y: 100 }}

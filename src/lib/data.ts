@@ -2,10 +2,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import realbetter from "../../public/realbetter.png";
+import logisticsWebsite from "../../public/logisticsWebsite.png";
 import collegeBharat from "../../public/collegeBharat.png";
 import techvins from "../../public/techvins.png";
-import gaurevKapur from "../../public/gaurevKapur.png";
+import shramikAdmin from "../../public/shramikAdmin.png";
 
 export const links = [
   {
@@ -39,66 +39,95 @@ export const experiencesData = [
     title: "Bachelor of Computer Applications (BCA)",
     location: "India",
     description:
-      "Completed my BCA, building a strong foundation in computer science and programming.",
+      "Completed a Bachelor’s degree in Computer Applications, building a strong foundation in computer science fundamentals including programming, data structures, databases, and software development principles.",
     icon: React.createElement(LuGraduationCap),
-    date: "2018-2021",
+    date: "2018 – 2021",
   },
   {
     title: "Diploma in Software Development",
     location: "India",
     description:
-      "Completed a diploma program focused on software development, enhancing my skills in MERN stack and modern technologies.",
+      "Completed a diploma focused on practical software development with hands-on experience in modern web technologies. Strengthened problem-solving skills and gained exposure to full-stack concepts using the MERN ecosystem through personal and academic projects.",
     icon: React.createElement(LuGraduationCap),
-    date: "2021-2022",
+    date: "2021 – 2022",
   },
   {
     title: "Frontend Developer",
     location: "Gurugram, India",
     description:
-      "Working as a frontend developer with over 1.5 years of experience. My expertise includes React, Next.js, Tailwind CSS, and building dynamic and responsive web applications. I am passionate about creating seamless user experiences and constantly learning new technologies.",
+      "Working as a frontend developer building scalable, performance-optimized web applications using React and Next.js. Actively involved in developing complex admin dashboards, role-based interfaces, reusable component systems, and improving application performance, usability, and maintainability.",
     icon: React.createElement(FaReact),
-    date: "2023 - present",
+    date: "2023 – Present",
   },
 ] as const;
 
+
 export const projectsData = [
   {
-    title: "B2B Real Estate Platform",
+    title: "College Bharat – Education & Career Platform",
     description:
-      "Worked as a frontend developer for 1 year, focusing on the platform's user interface and admin panel. This platform connects real estate agents, developers, and builders to facilitate property matching. Leveraged modern technologies to create a responsive and dynamic user experience.",
-    tags: ["Next.js", "Tailwind CSS", "React Admin", "TypeScript"],
-    imageUrl: realbetter,
-  },
-
-  {
-    title: "College Bharat",
-    description:
-      "Worked as the frontend lead developer for a platform designed to help students explore articles, blogs, and resources for government exams and college admissions. The platform enables students to find college details, exam brochures, and search for colleges across India.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Led frontend development for a scalable platform helping students explore colleges, exams, and govt job updates. Built reusable UI components, advanced search, article & college listings, and personalized bookmarks. Optimized performance, responsive design, and accessibility across devices.",
+    tags: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Redux",
+      "Tailwind CSS",
+      "Responsive Design",
+      "Performance Optimization",
+    ],
     imageUrl: collegeBharat,
   },
 
   {
-    title: "TechVins Website",
+    title: "TechVins Official Website",
     description:
-      "Developed the company's official website independently using Next.js and Tailwind CSS. The site achieved a perfect 100 PageSpeed score and is optimized for performance and user experience. The project involved creating a dynamic and responsive multi-page website tailored to the company's branding.",
+      "Built the company’s marketing website end-to-end with high performance, SEO, and maintainable architecture. Achieved 100 PageSpeed score via lazy loading, code splitting, and optimized DOM. Ensured responsive, clean, and accessible UI.",
     tags: [
       "Next.js",
+      "React",
+      "TypeScript",
       "Tailwind CSS",
       "Performance Optimization",
-      "100 PageSpeed",
+      "SEO",
+      "Web Vitals",
     ],
     imageUrl: techvins,
   },
 
   {
-    title: "Gaurav Kapur's Personal Website",
+    title: "Logistics Admin CRM & Operations Platform",
     description:
-      "Designed and developed the personal website for the owner of RealBetter. Built using Next.js and Tailwind CSS, the site highlights the owner's professional achievements and personal brand in a sleek and user-friendly interface.",
-    tags: ["Next.js", "Tailwind CSS", "React", "Personal Branding"],
-    imageUrl: gaurevKapur,
+      "Sole frontend engineer for a logistics admin platform managing customers, vendors, and agents. Implemented multi-step order workflows, step-locked onboarding, dynamic pricing, bulk CSV uploads, dispute management, and role-based access. Focused on data integrity, enterprise UX, and reusable components.",
+    tags: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "React Hook Form",
+      "Admin Systems",
+      "Role-Based Access",
+      "Frontend Validation",
+    ],
+    imageUrl: logisticsWebsite,
+  },
+
+  {
+    title: "Shramik Admin Panel – Service Marketplace Dashboard",
+    description:
+      "Developed a role-based admin dashboard for a service marketplace connecting customers with skilled professionals. Built onboarding, pricing workflows, worker management, and operational dashboards. Ensured scalable frontend architecture, validations, and reusable components.",
+    tags: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Admin Systems",
+      "Role-Based Access",
+      "Complex Workflows",
+      "Frontend Validation",
+    ],
+    imageUrl: shramikAdmin,
   },
 ] as const;
+
 
 export const skillsData = [
   "HTML",
@@ -107,17 +136,23 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
-  "Tailwind",
-  "Bootstrap",
+  "Tailwind CSS",
   "Redux",
-  "Framer Motion",
-  "GraphQL",
-  "WordPress",
+  "React Hook Form",
+  "REST APIs",
+  "Form Validation",
+  "Role-Based Access Control (RBAC)",
+  "Admin Dashboards",
+  "Performance Optimization",
+  "SEO",
+  "Web Vitals",
   "Node.js",
-  "Express",
+  "Express.js",
   "MongoDB",
-  "Prisma",
+  "Redis",
   "Git",
-  "Github",
+  "GitHub",
   "Postman",
+  "Framer Motion",
 ] as const;
+

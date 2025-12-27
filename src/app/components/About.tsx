@@ -18,28 +18,27 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Computer Applications</span>, I started my
-        career as a <span className="font-medium">frontend developer</span>.
-        Along the way, I expanded my skill set to include{" "}
-        <span className="font-medium">backend development</span> using{" "}
-        <span className="font-medium">MongoDB, Express, and Node.js</span>.{" "}
-        <span className="italic">My favorite part of development</span> is
-        bringing designs to life and creating seamless user experiences. I{" "}
-        <span className="underline">enjoy</span> solving challenges that enhance
-        both functionality and aesthetics. I am always eager to learn new
-        technologies and improve my craft. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        I graduated with a degree in{" "}
+        <span className="font-medium">Computer Applications</span> and currently
+        work as a <span className="font-medium">frontend developer</span>. My
+        professional experience is focused on building responsive, user-friendly
+        interfaces, while I have also developed{" "}
+        <span className="font-medium">personal MERN stack projects</span> to
+        gain hands-on full-stack experience. I enjoy translating designs into
+        clean, functional UIs and solving real-world frontend challenges. I am
+        continuously learning, exploring{" "}
+        <span className="font-medium">Generative AI</span>, and expanding my
+        skills across the stack. I am open to{" "}
+        <span className="font-medium">
+          frontend and full-stack opportunities
+        </span>
+        .
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy reading
-        books, learning new technologies, and exploring ways to enhance my
-        skills. I also like watching tech-related videos and staying updated
-        with industry trends. In my free time, I find joy in relaxing with a
-        good book and occasionally experimenting with new tools and frameworks
-        to expand my knowledge.
+        <span className="italic">Beyond work</span>, I enjoy reading, learning
+        new technologies, exploring GenAI tools, and keeping up with industry
+        trends.
       </p>
     </motion.section>
   );

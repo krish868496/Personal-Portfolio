@@ -7,6 +7,7 @@ import {Tailwind} from '@react-email/tailwind'
 type ContactFormEmailProps= {
   message: string
   email: string
+  reason: string
 }
 const ContactFormEmail = ({ message, email }: ContactFormEmailProps) => {
   return <Html>
