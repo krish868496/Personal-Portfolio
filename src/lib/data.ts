@@ -35,98 +35,107 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
-  {
-    title: "Bachelor of Computer Applications (BCA)",
-    location: "India",
-    description:
-      "Completed a Bachelor’s degree in Computer Applications, building a strong foundation in computer science fundamentals including programming, data structures, databases, and software development principles.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2018 – 2021",
-  },
-  {
-    title: "Diploma in Software Development",
-    location: "India",
-    description:
-      "Completed a diploma focused on practical software development with hands-on experience in modern web technologies. Strengthened problem-solving skills and gained exposure to full-stack concepts using the MERN ecosystem through personal and academic projects.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2021 – 2022",
-  },
-  {
-    title: "Frontend Developer",
-    location: "Gurugram, India",
-    description:
-      "Working as a frontend developer building scalable, performance-optimized web applications using React and Next.js. Actively involved in developing complex admin dashboards, role-based interfaces, reusable component systems, and improving application performance, usability, and maintainability.",
-    icon: React.createElement(FaReact),
-    date: "2023 – Present",
-  },
+{
+title: "Bachelor of Computer Applications (BCA)",
+location: "India",
+description:
+"Built a strong foundation in Computer Science, studying Data Structures & Algorithms, Database Management Systems (DBMS), Operating Systems, Computer Networks, Software Engineering, Object-Oriented Programming, and Web Technologies. Developed problem-solving skills and a deep understanding of software development fundamentals.",
+icon: React.createElement(LuGraduationCap),
+date: "2018 – 2021",
+},
+
+{
+title: "Diploma in Software Engineering",
+location: "India",
+description:
+"Received industry-focused training in software development, web technologies, database design, software architecture, and application development. Worked on practical projects involving frontend, backend, and full-stack development while strengthening engineering and debugging skills.",
+icon: React.createElement(LuGraduationCap),
+date: "2021 – 2022",
+},
+
+{
+title: "Frontend Engineer",
+location: "Gurugram, India",
+description:
+"Developing scalable web applications, enterprise dashboards, and high-performance user experiences using React.js, Next.js, TypeScript, and modern frontend technologies. Built role-based systems, complex business workflows, reusable component libraries, SEO-optimized websites, and performance-focused applications while collaborating closely with product, design, and backend teams.",
+icon: React.createElement(FaReact),
+date: "2023 – Present",
+},
 ] as const;
+
 
 
 export const projectsData = [
-  {
-    title: "College Bharat – Education & Career Platform",
-    description:
-      "Led frontend development for a scalable platform helping students explore colleges, exams, and govt job updates. Built reusable UI components, advanced search, article & college listings, and personalized bookmarks. Optimized performance, responsive design, and accessibility across devices.",
-    tags: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Redux",
-      "Tailwind CSS",
-      "Responsive Design",
-      "Performance Optimization",
-    ],
-    imageUrl: collegeBharat,
-  },
+{
+title: "FRU Logistics – Enterprise Logistics & Operations Platform",
+description:
+"Built a large-scale logistics management platform supporting customers, vendors, agents, and administrators through secure role-based access control. Developed complex business workflows for order lifecycle management, quotations, pricing, taxation, invoicing, shipment tracking, manifests, and operational analytics. Architected reusable form systems, dynamic validations, server-driven tables, and scalable frontend architecture optimized for enterprise operations.",
+tags: [
+"Next.js",
+"React",
+"TypeScript",
+"Redux Toolkit",
+"RBAC",
+"Admin Dashboard",
+"Enterprise Systems",
+"REST APIs",
+"Complex Workflows",
+],
+imageUrl: logisticsWebsite,
+},
 
-  {
-    title: "TechVins Official Website",
-    description:
-      "Built the company’s marketing website end-to-end with high performance, SEO, and maintainable architecture. Achieved 100 PageSpeed score via lazy loading, code splitting, and optimized DOM. Ensured responsive, clean, and accessible UI.",
-    tags: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Performance Optimization",
-      "SEO",
-      "Web Vitals",
-    ],
-    imageUrl: techvins,
-  },
+{
+title: "TechVins Official Website – High Performance Marketing Platform",
+description:
+"Engineered a backend-driven page builder powering 50+ SEO-optimized pages through reusable component architecture and dynamic content rendering. Achieved a perfect Lighthouse score of 100/100 by implementing Core Web Vitals optimization, code splitting, lazy loading, image optimization, and SEO-first rendering strategies. Built scalable layouts enabling content teams to publish updates without developer involvement.",
+tags: [
+"Next.js",
+"React",
+"TypeScript",
+"SEO",
+"Core Web Vitals",
+"Lighthouse",
+"Performance Optimization",
+"SSR",
+"JSON-LD",
+],
+imageUrl: techvins,
+},
 
-  {
-    title: "Logistics Admin CRM & Operations Platform",
-    description:
-      "Sole frontend engineer for a logistics admin platform managing customers, vendors, and agents. Implemented multi-step order workflows, step-locked onboarding, dynamic pricing, bulk CSV uploads, dispute management, and role-based access. Focused on data integrity, enterprise UX, and reusable components.",
-    tags: [
-      "Next.js",
-      "React",
-      "Tailwind CSS",
-      "React Hook Form",
-      "Admin Systems",
-      "Role-Based Access",
-      "Frontend Validation",
-    ],
-    imageUrl: logisticsWebsite,
-  },
+{
+title: "Smart Shramik – Workforce Marketplace & Operations Dashboard",
+description:
+"Developed a role-based workforce management platform connecting customers with skilled workers through streamlined booking and operational workflows. Built onboarding, KYC verification, worker assignment, pricing, payouts, reporting, and customer support modules while implementing scalable dashboard architecture, advanced filtering, file uploads, and reusable management systems.",
+tags: [
+"Next.js",
+"React",
+"TypeScript",
+"RBAC",
+"Marketplace",
+"Dashboard Analytics",
+"Admin Systems",
+"REST APIs",
+],
+imageUrl: shramikAdmin,
+},
 
-  {
-    title: "Shramik Admin Panel – Service Marketplace Dashboard",
-    description:
-      "Developed a role-based admin dashboard for a service marketplace connecting customers with skilled professionals. Built onboarding, pricing workflows, worker management, and operational dashboards. Ensured scalable frontend architecture, validations, and reusable components.",
-    tags: [
-      "Next.js",
-      "React",
-      "Tailwind CSS",
-      "Admin Systems",
-      "Role-Based Access",
-      "Complex Workflows",
-      "Frontend Validation",
-    ],
-    imageUrl: shramikAdmin,
-  },
-] as const;
+{
+title: "College Bharat – Education & Career Discovery Platform",
+description:
+"Contributed to a large-scale education platform helping students explore colleges, exams, admissions, fees, scholarships, and career opportunities. Developed high-performance listings, search experiences, article systems, bookmarking features, and content discovery modules while improving responsiveness, accessibility, and frontend performance across multiple high-traffic pages.",
+tags: [
+"Next.js",
+"React",
+"TypeScript",
+"Search Systems",
+"Content Platform",
+"Performance Optimization",
+"Responsive Design",
+],
+imageUrl: collegeBharat,
+},
+];
+
 
 
 export const skillsData = [

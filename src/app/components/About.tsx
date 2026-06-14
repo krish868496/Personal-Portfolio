@@ -17,29 +17,33 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-        I graduated with a degree in{" "}
-        <span className="font-medium">Computer Applications</span> and currently
-        work as a <span className="font-medium">frontend developer</span>. My
-        professional experience is focused on building responsive, user-friendly
-        interfaces, while I have also developed{" "}
-        <span className="font-medium">personal MERN stack projects</span> to
-        gain hands-on full-stack experience. I enjoy translating designs into
-        clean, functional UIs and solving real-world frontend challenges. I am
-        continuously learning, exploring{" "}
-        <span className="font-medium">Generative AI</span>, and expanding my
-        skills across the stack. I am open to{" "}
-        <span className="font-medium">
-          frontend and full-stack opportunities
-        </span>
-        .
-      </p>
+     <p className="mb-3">
+  I graduated with a degree in{" "}
+  <span className="font-medium">Computer Applications</span> and currently work
+  as a <span className="font-medium">Frontend Engineer</span> with experience
+  building scalable web applications, enterprise dashboards, and high-performance
+  user interfaces using React.js, Next.js, and TypeScript. My professional work
+  includes logistics, workforce management, and content-driven platforms where I
+  focus on creating responsive, accessible, and maintainable applications while
+  following modern frontend architecture and engineering best practices.
+</p>
 
-      <p>
-        <span className="italic">Beyond work</span>, I enjoy reading, learning
-        new technologies, exploring GenAI tools, and keeping up with industry
-        trends.
-      </p>
+<p className="mb-3">
+  Beyond frontend development, I have built{" "}
+  <span className="font-medium">full-stack MERN applications</span> featuring
+  authentication, role-based access control, payment gateway integrations,
+  REST APIs, and database-driven workflows. I actively study{" "}
+  <span className="font-medium">System Design, Machine Coding, Data Structures & Algorithms, and Computer Science fundamentals</span>
+  to strengthen my problem-solving skills and build scalable software systems.
+</p>
+
+<p>
+  <span className="italic">Outside of work</span>, I enjoy learning new
+  technologies, exploring Generative AI tools, reading engineering blogs,
+  solving coding challenges, and staying updated with modern software
+  development practices. I am passionate about continuous learning and always
+  looking for opportunities to grow as a software engineer.
+</p>
     </motion.section>
   );
 }
